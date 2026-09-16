@@ -8,7 +8,11 @@
     intel-llm = { arch = "intel-llm"; aur = true; };
     intel-llm-convert = { arch = "intel-llm-convert"; aur = true; };
     litert-lm = { arch = "litert-lm"; aur = true; };
-    llama-cpp-sycl = { arch = "llama.cpp-sycl-bin"; aur = true; };
+    # Retired 2026-09-13: `llama.cpp-sycl-bin` was deleted from the AUR (PRQ#86548).
+    # `extra` ships the SYCL backend natively: `llama-cpp` (engine) + `ggml-sycl`
+    # (backend, arrives as an intel-llm dependency). Declare the official engine;
+    # the backend stays via that dependency (reconciler installs, never removes).
+    llama-cpp-sycl = { arch = "llama-cpp"; };
 
     # LM Studio: a desktop app for downloading and running local GGUF models, with
     # its own chat UI and an OpenAI-compatible local server. The one GUI entry in

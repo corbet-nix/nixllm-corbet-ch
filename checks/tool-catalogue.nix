@@ -19,10 +19,10 @@ let
   };
   results = [
     (check "tools/official-packages-stay-out-of-aur"
-      (all.nixllm.archPackages == [ "python-openai" "python-openai-whisper" "python-transformers" "whisper-cpp" ])
+      (all.nixllm.archPackages == [ "llama-cpp" "python-openai" "python-openai-whisper" "python-transformers" "whisper-cpp" ])
       "got: ${builtins.toJSON all.nixllm.archPackages}")
     (check "tools/aur-packages-stay-out-of-pacman"
-      (all.nixllm.aurPackages == [ "anythingllm-cli-bin" "intel-llm" "intel-llm-convert" "litert-lm" "llama.cpp-sycl-bin" "lmstudio-bin" "openvino-genai-bin" ])
+      (all.nixllm.aurPackages == [ "anythingllm-cli-bin" "intel-llm" "intel-llm-convert" "litert-lm" "lmstudio-bin" "openvino-genai-bin" ])
       "got: ${builtins.toJSON all.nixllm.aurPackages}")
   ];
   failed = lib.filter (result: !result.ok) results;
