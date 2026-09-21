@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Native workstation tools that interact with models or model-serving APIs.  GPU drivers, runtimes,
 # and generic compute bindings stay in nixgpu; these entries are the clients, inference engines,
 # and conversion tools which use that substrate.

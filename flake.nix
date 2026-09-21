@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 {
   description = "nixllm - self-hosted LLM serving where the model store IS the registry";
 

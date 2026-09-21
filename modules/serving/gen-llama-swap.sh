@@ -1,4 +1,5 @@
 #!/bin/sh
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # gen-llama-swap.sh — THE STORE IS THE REGISTRY (nixgpu CONTRACT.md B10). Scan the model store and write
 # ONE complete llama-swap config (globals + a "models:" entry per *fitting* GGUF) atomically to $OUT. The
 # broker runs `llama-swap --config $OUT --watch-config`, so a rewrite hot-reloads in ~2s with no pod restart

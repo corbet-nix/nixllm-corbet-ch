@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 { lib, pkgs, toolsModule }:
 let
   check = name: ok: detail: { inherit name ok detail; };

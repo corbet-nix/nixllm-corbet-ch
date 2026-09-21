@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Proves the mirror of the sibling nixgpu project's `nixgpu.sysfs.vramTotalAttr` (the amdgpu sysfs
 # attribute name for total VRAM) works in ALL THREE directions, without nixllm depending on the real
 # nixgpu flake at all — see modules/serving/default.nix's `vramTotalAttr`/`vramMirrorDrifted` bindings

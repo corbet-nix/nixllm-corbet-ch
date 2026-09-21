@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Platform-neutral selection of NixLLM workstation tools. Arch consumers receive separate official
 # repository and AUR lists so one AUR name cannot poison the Pacman transaction.
 { config, lib, ... }:

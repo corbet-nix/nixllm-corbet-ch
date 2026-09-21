@@ -36,7 +36,7 @@ rewrites it when the content actually changed, so llama-swap's
 This module implements platform contract behaviors **B4** (one server owns
 all LLMs), **B10** (store-is-registry), **B14** (same-model + multi-model
 concurrency) and **B15** (MoE / partial offload) from the
-[nixgpu contract](https://github.com/julian-corbet/nixgpu-corbet-ch/blob/main/CONTRACT.md).
+[nixgpu contract](https://github.com/corbet-nix/nixgpu-corbet-ch/blob/main/CONTRACT.md).
 The GPU *device* infrastructure this lane depends on (a device-resource
 token, a priority-class ladder, VRAM pressure eviction) is a separate
 concern shipped by the sibling **nixgpu** project — this module only

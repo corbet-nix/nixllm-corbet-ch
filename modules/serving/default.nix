@@ -1,9 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # serving — the shared LLM serving lane (the heart of nixllm). ONE llama-swap + ROCm llama.cpp broker
 # owns every model on the card; LiteLLM sits in front as the single OpenAI-compatible door every consuming
 # app targets. The model STORE is the registry (nixgpu CONTRACT.md B10): drop a GGUF in the right subdir
 # and it becomes servable by name, with no hand-maintained catalog. This module implements platform
 # contract behaviors B4 (one server owns all LLMs), B10 (store-is-registry), B14 (concurrency, twice) and
-# B15 (MoE / partial offload) — see https://github.com/julian-corbet/nixgpu-corbet-ch/blob/main/CONTRACT.md
+# B15 (MoE / partial offload) — see https://github.com/corbet-nix/nixgpu-corbet-ch/blob/main/CONTRACT.md
 #
 # GPU DEVICE INFRA (device tokens, priority ladder, pressure watcher) is a separate concern, shipped by the
 # sibling nixgpu project — this module is a *consumer* of that contract (priorityClassName, a device

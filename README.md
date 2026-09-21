@@ -34,9 +34,9 @@ catalog that drifts from the directory it describes. `nixllm` deletes it:
   when they fit together.
 
 These are behaviors B4/B10/B14/B15 of the
-[nixgpu contract](https://github.com/julian-corbet/nixgpu-corbet-ch/blob/main/CONTRACT.md)
+[nixgpu contract](https://github.com/corbet-nix/nixgpu-corbet-ch/blob/main/CONTRACT.md)
 — platform obligations for any serving lane on a shared card. `nixllm` is the
-lane; [nixgpu](https://github.com/julian-corbet/nixgpu-corbet-ch) is the
+lane; [nixgpu](https://github.com/corbet-nix/nixgpu-corbet-ch) is the
 sharing substrate it runs on.
 
 ## What ships
@@ -82,22 +82,23 @@ nothing to review beforehand.
 
 Like its siblings, `nixllm` targets a declarative GitOps cluster:
 **nixidy-rendered manifests synced by Argo CD** — the spine shipped by
-[nixk3s](https://github.com/julian-corbet/nixk3s-corbet-ch). GPU scheduling
+[nixk3s](https://github.com/corbet-nix/nixk3s-corbet-ch). GPU scheduling
 and reclaim come from
-[nixgpu](https://github.com/julian-corbet/nixgpu-corbet-ch).
+[nixgpu](https://github.com/corbet-nix/nixgpu-corbet-ch).
 
 ## Related projects
 
 Part of an interoperating set — usable independently, designed together:
 
-- [nixgpu](https://github.com/julian-corbet/nixgpu-corbet-ch) — priority-based
+- [nixgpu](https://github.com/corbet-nix/nixgpu-corbet-ch) — priority-based
   sharing of one GPU; the substrate this lane runs on.
-- [nixk3s](https://github.com/julian-corbet/nixk3s-corbet-ch) — bare-metal k3s
+- [nixk3s](https://github.com/corbet-nix/nixk3s-corbet-ch) — bare-metal k3s
   on NixOS + the nixidy → Argo CD GitOps spine.
-- [nixapps](https://github.com/julian-corbet/nixapps-corbet-ch) — curated
+- [nixapps](https://github.com/corbet-nix/nixapps-corbet-ch) — curated
   tenant app modules (image generation, TTS, …) that consume the same
   contracts.
 
-## License
 
-[MIT License](LICENSE) &copy; 2026 Julian Corbet
+## Licence
+
+Outbound licence is `MIT OR Apache-2.0`. See `LICENSE-MIT` and `LICENSE-APACHE`; every source file carries `SPDX-License-Identifier: MIT OR Apache-2.0`.

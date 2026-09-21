@@ -25,7 +25,7 @@
   <nav>
     <a href="/" class="nav-brand">nixllm</a>
     <div class="nav-links">
-      <a href="https://github.com/julian-corbet/nixllm-corbet-ch">GitHub</a>
+      <a href="https://github.com/corbet-nix/nixllm-corbet-ch">GitHub</a>
       <a href="#status">Status</a>
       <a href="#module">Module</a>
       <a href="#requirements">Requirements</a>
@@ -67,7 +67,7 @@
     throwaway artifact, never a source of truth you edit.</p>
     <div class="cta">
       <a href="#status" class="btn btn-primary">Read the honest status</a>
-      <a href="https://github.com/julian-corbet/nixllm-corbet-ch" class="btn btn-secondary">View on GitHub</a>
+      <a href="https://github.com/corbet-nix/nixllm-corbet-ch" class="btn btn-secondary">View on GitHub</a>
     </div>
   </div>
 </header>
@@ -102,7 +102,7 @@
         <h3>No invented benchmarks</h3>
         <p>Nothing on this page claims a module, benchmark, or behavior that
         isn't real. This lane implements behaviors B4/B10/B14/B15 of the
-        <a href="https://github.com/julian-corbet/nixgpu-corbet-ch/blob/main/CONTRACT.md">nixgpu contract</a>
+        <a href="https://github.com/corbet-nix/nixgpu-corbet-ch/blob/main/CONTRACT.md">nixgpu contract</a>
         &mdash; the honest spec it's built and tested against.</p>
       </div>
       <div class="step">
@@ -161,7 +161,7 @@
     <div class="table-scroll">
       <table>
         <tbody>
-          <tr><td><code>serving</code></td><td>The full lane as a nixidy module: llama-swap + llama.cpp broker, LiteLLM front door, store-scan config generator, GPU contract surface as options. Landed and dogfooded &mdash; the originating production cluster runs this generalized module. See <a href="https://github.com/julian-corbet/nixllm-corbet-ch/blob/main/modules/serving/README.md">modules/serving/README.md</a> for the option table.</td></tr>
+          <tr><td><code>serving</code></td><td>The full lane as a nixidy module: llama-swap + llama.cpp broker, LiteLLM front door, store-scan config generator, GPU contract surface as options. Landed and dogfooded &mdash; the originating production cluster runs this generalized module. See <a href="https://github.com/corbet-nix/nixllm-corbet-ch/blob/main/modules/serving/README.md">modules/serving/README.md</a> for the option table.</td></tr>
         </tbody>
       </table>
     </div>
@@ -174,9 +174,9 @@
     <div class="table-scroll">
       <table>
         <tbody>
-          <tr><td>Delivery path</td><td>Declarative GitOps only &mdash; nixidy-rendered manifests synced by Argo CD, the spine shipped by the sibling <a href="https://github.com/julian-corbet/nixk3s-corbet-ch">nixk3s</a> project. Hand-applied YAML is not supported.</td></tr>
-          <tr><td>GPU scheduling</td><td>Priority-based scheduling and VRAM reclaim come from the sibling <a href="https://github.com/julian-corbet/nixgpu-corbet-ch">nixgpu</a> project; this lane declares its three-line contract and never manages the card itself.</td></tr>
-          <tr><td>Scope</td><td>Serving lane only &mdash; one shared LLM broker. Other tenants (image generation, TTS, &hellip;) ship as app modules in the sibling <a href="https://github.com/julian-corbet/nixapps-corbet-ch">nixapps</a> project.</td></tr>
+          <tr><td>Delivery path</td><td>Declarative GitOps only &mdash; nixidy-rendered manifests synced by Argo CD, the spine shipped by the sibling <a href="https://github.com/corbet-nix/nixk3s-corbet-ch">nixk3s</a> project. Hand-applied YAML is not supported.</td></tr>
+          <tr><td>GPU scheduling</td><td>Priority-based scheduling and VRAM reclaim come from the sibling <a href="https://github.com/corbet-nix/nixgpu-corbet-ch">nixgpu</a> project; this lane declares its three-line contract and never manages the card itself.</td></tr>
+          <tr><td>Scope</td><td>Serving lane only &mdash; one shared LLM broker. Other tenants (image generation, TTS, &hellip;) ship as app modules in the sibling <a href="https://github.com/corbet-nix/nixapps-corbet-ch">nixapps</a> project.</td></tr>
         </tbody>
       </table>
     </div>
@@ -213,14 +213,14 @@
 <footer>
   <div class="container">
     <div class="footer-links">
-      <a href="https://github.com/julian-corbet/nixllm-corbet-ch">Source</a>
-      <a href="https://github.com/julian-corbet/nixllm-corbet-ch/issues">Issues</a>
+      <a href="https://github.com/corbet-nix/nixllm-corbet-ch">Source</a>
+      <a href="https://github.com/corbet-nix/nixllm-corbet-ch/issues">Issues</a>
       <a href="https://nixgpu.corbet.ch">nixgpu</a>
       <a href="https://nixk3s.corbet.ch">nixk3s</a>
       <a href="https://nixapps.corbet.ch">nixapps</a>
     </div>
     <p>
-      <a href="https://github.com/julian-corbet/nixllm-corbet-ch/blob/main/LICENSE">MIT</a> &middot;
+      <a href="https://github.com/corbet-nix/nixllm-corbet-ch/blob/main/LICENSE">MIT</a> &middot;
       <a href="https://github.com/julian-corbet">Julian Corbet</a>
     </p>
   </div>
